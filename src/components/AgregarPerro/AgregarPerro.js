@@ -7,7 +7,7 @@ export default function AgregarPerro() {
         <Fragment>
             <Navegacion/>
             <main>
-            <form class="container d-flex flex-column justify-content-center formulario" action="https://formspree.io/f/mgeqrqkg" method="POST">
+            <form class="container d-flex flex-column justify-content-center formulario" action="" method="POST">
                 <div class="row">
                     <label for="nombre" class="col-sm-2 col-form-label etiquetas">Nombre</label>
                     <div class="col-sm-8">
