@@ -1,0 +1,10 @@
+.etiquetas{
+    background-color:rgb(97, 118, 75)!important;
+    color: rgb(171, 206, 102);
+}
+
+.formulario{
+    gap: 10px;
+    padding: 130px;
+    background-color: #ffffffb9;
+}

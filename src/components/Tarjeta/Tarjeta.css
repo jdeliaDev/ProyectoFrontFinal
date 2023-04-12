@@ -1,0 +1,10 @@
+.card{
+    width: fit-content !important;
+    background-color: rgb(151, 134, 107)!important;
+    color: whitesmoke;
+}
+
+.imgTamaño{
+    width: auto;
+    height: 200px;
+}
