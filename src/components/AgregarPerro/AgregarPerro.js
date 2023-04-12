@@ -27,7 +27,7 @@ export default function AgregarPerro() {
                     </div>
                 </div>
                 <div class="row">
-                    <label for="imagen" class="col-sm-2 col-form-label etiquetas">Imagen</label>
+                    <label for="imagen" class="col-sm-2 col-form-label etiquetas">Imágen</label>
                     <div class="col-sm-8">
                         <input type="file" class="form-control" id="imagen" accept="image/*" onChange="" required/>
                     </div>
