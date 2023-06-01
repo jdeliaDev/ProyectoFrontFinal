@@ -1,17 +1,17 @@
 import{BrowserRouter,Routes,Route} from 'react-router-dom';
 import Inicio from '../components/Inicio/Inicio';
-import SeccionTarjMachos from '../components/SeccionTarjMachos/SeccionTarjMachos';
-import SeccionTarjHembras from '../components/SeccionTarjHembras/SeccionTarjHembras';
-import AgregarPerro from '../components/AgregarPerro/AgregarPerro';
+import SeccionTarjetas from '../components/SeccionTarjetas/SeccionTarjetas';
+import PerroAM from '../components/PerroAM/PerroAM';
 
 export default function Router(){
     return(
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Inicio/>}/>
-                <Route path='/SeccionTarjMachos' element={<SeccionTarjMachos/>}/>
-                <Route path='/SeccionTarjHembras' element={<SeccionTarjHembras/>}/>
-                <Route path='/AgregarPerro' element={<AgregarPerro/>}/>
+                <Route path='/SeccionTarjMachos' element={<SeccionTarjetas sexo='M'/>}/>
+                <Route path='/SeccionTarjHembras' element={<SeccionTarjetas sexo='H'/>}/>
+                <Route path='/AgregarPerro' element={<PerroAM paso= {''}/>}/>
+                <Route path='/ModificarPerro' element={<PerroAM paso= {localStorage.getItem('infoPerro')}/>}/>
             </Routes>
         </BrowserRouter>
     )
