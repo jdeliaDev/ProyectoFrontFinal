@@ -10,8 +10,9 @@ export default function Router(){
                 <Route path='/' element={<Inicio/>}/>
                 <Route path='/SeccionTarjMachos' element={<SeccionTarjetas sexo='M'/>}/>
                 <Route path='/SeccionTarjHembras' element={<SeccionTarjetas sexo='H'/>}/>
-                <Route path='/AgregarPerro' element={<PerroAM paso= {''}/>}/>
-                <Route path='/ModificarPerro' element={<PerroAM paso= {localStorage.getItem('infoPerro')}/>}/>
+                <Route path='/AgregarPerroMacho' element={<PerroAM paso= {''} sexo='M'/>}/>
+                <Route path='/AgregarPerroHembra' element={<PerroAM paso= {''} sexo='H'/>}/>
+                <Route path='/ModificarPerro' element={<PerroAM paso= {'U'}/>}/>
             </Routes>
         </BrowserRouter>
     )

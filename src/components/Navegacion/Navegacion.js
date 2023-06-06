@@ -23,7 +23,7 @@ export default function Navegacion() {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <Link className="btn botones dropdown-item" to="/AgregarPerro" onClick={()=>dataPerro()}>Agregar</Link>
+                                    <Link className="btn botones dropdown-item" to="/AgregarPerroMacho" onClick={()=>dataPerro()}>Agregar</Link>
                                 </li>
                             </ul>
                         </div>                  
@@ -36,7 +36,7 @@ export default function Navegacion() {
                             </button>
                             <ul className="dropdown-menu">
                                 <li>
-                                    <Link className="btn botones dropdown-item" to="/AgregarPerro" onClick={()=>dataPerro()}>Agregar</Link>
+                                    <Link className="btn botones dropdown-item" to="/AgregarPerroHembra" onClick={()=>dataPerro()}>Agregar</Link>
                                 </li>
                             </ul>
                         </div>                  
