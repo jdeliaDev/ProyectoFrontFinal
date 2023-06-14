@@ -5,8 +5,7 @@ import './PerroAM.css';
 
 export default function PerroAM({paso,sexo}) {
 
-    let [ok,setOk]=useState(false);
-
+    const [ok,setOk]=useState(false);
     const [metodo,setMetodo]=useState('');
     const[form,setForm]=useState({
         nombre:'',
@@ -98,12 +97,15 @@ export default function PerroAM({paso,sexo}) {
                             <input type="date" className="form-control" placeholder="Fecha Nacimiento" id="fechaNacimiento" name="fechaNacimiento" value={form.fechaNacimiento} onChange={(event)=>handleChange(event)}  required/>
                         </div>
                     </div>
-                    <div className="row">
-                        <label htmlFor="imagen" className="col-sm-2 col-form-label etiquetas">Imágen</label>
-                        <div className="col-sm-8">
-                            <input type="file" className="form-control" id="imagen" name="imagen" accept="image/*" onChange={(event)=>handleChangeInput(event)} required/>
+                    {paso !== ''? ""
+                    :
+                        <div className="row">
+                            <label htmlFor="imagen" className="col-sm-2 col-form-label etiquetas">Imágen</label>
+                            <div className="col-sm-8">
+                                <input type="file" className="form-control" id="imagen" name="imagen" accept="image/*" onChange={(event)=>handleChangeInput(event)} required/>
+                            </div>
                         </div>
-                    </div>
+                    }
                     <div className="row">
                         <div className="col-sm-8 d-none">
                             <input type="text" className="form-control" id="sexo" name="sexo"/>
@@ -120,7 +122,7 @@ export default function PerroAM({paso,sexo}) {
                      <strong> Perro agregado/actualizado exitosamente!</strong>
                      <Link to={sexo==="M"?"/SeccionTarjMachos":"/SeccionTarjHembras"} >Aceptar</Link>
                  </div>
-             }
+            }
         </Fragment> 
         
     )

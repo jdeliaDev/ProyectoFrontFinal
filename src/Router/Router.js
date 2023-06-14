@@ -12,7 +12,8 @@ export default function Router(){
                 <Route path='/SeccionTarjHembras' element={<SeccionTarjetas sexo='H'/>}/>
                 <Route path='/AgregarPerroMacho' element={<PerroAM paso= {''} sexo='M'/>}/>
                 <Route path='/AgregarPerroHembra' element={<PerroAM paso= {''} sexo='H'/>}/>
-                <Route path='/ModificarPerro' element={<PerroAM paso= {'U'}/>}/>
+                <Route path='/ModificarPerroMacho' element={<PerroAM paso= {'U'}sexo='M'/>}/>
+                <Route path='/ModificarPerroHembra' element={<PerroAM paso= {'U'} sexo='H'/>}/>
             </Routes>
         </BrowserRouter>
     )
